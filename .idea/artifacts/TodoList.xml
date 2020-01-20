@@ -1,0 +1,25 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="TodoList">
+    <output-path>$PROJECT_DIR$/out/artifacts/TodoList</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="com.goni.todoList.Main" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="TodoList.jar">
+        <element id="module-output" name="TodoList" />
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/src/com/goni/todoList/META-INF/MANIFEST.MF" />
+          <element id="file-copy" path="$PROJECT_DIR$/src/com/goni/META-INF/MANIFEST.MF" />
+        </element>
+      </element>
+      <element id="file-copy" path="$PROJECT_DIR$/jlfgr-1_0/jlfgr-1_0.jar" />
+    </root>
+  </artifact>
+</component>

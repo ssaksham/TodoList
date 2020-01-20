@@ -1,0 +1,49 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<BorderPane fx:id="mainWindowPane" fx:controller="com.goni.todoList.Controller"
+            xmlns:fx="http://javafx.com/fxml">
+    <top>
+        <VBox>
+        <MenuBar>
+            <Menu text="File">
+                <items>
+                    <MenuItem text="New" onAction="#showNewItemDialog"/>
+                    <SeparatorMenuItem/>
+                    <MenuItem text="Exit" onAction="#handleExit"/>
+                </items>
+            </Menu>
+        </MenuBar>
+        <ToolBar>
+            <HBox>
+                <Button text="New..." onAction="#showNewItemDialog" >
+                    <graphic>
+                        <ImageView>
+                            <Image url="@/toolbarButtonGraphics/general/New24.gif"></Image>
+                        </ImageView>
+                    </graphic>
+                        <tooltip>
+                         <Tooltip text="Click here to add new Button"/>
+                        </tooltip>
+                </Button>
+                <ToggleButton text="Today's Items" onAction="#handleFilter">
+                    <tooltip>
+                        <Tooltip text="Button down: show today's items"/>
+                    </tooltip>
+                </ToggleButton>
+            </HBox>
+        </ToolBar>
+        </VBox>
+    </top>
+    <left>
+        <ListView fx:id="listView" onKeyPressed="#keyPressed"/>
+    </left>
+    <center>
+        <VBox>
+        <TextArea wrapText="true" fx:id="textArea" VBox.vgrow="ALWAYS"/>
+        <Label fx:id="label"/>
+        </VBox>
+    </center>
+
+</BorderPane>

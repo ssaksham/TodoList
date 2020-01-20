@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="TodoList.jnlp">
+  <information>
+    <title>TodoList</title>
+    <vendor>Unknown</vendor>
+    <description>TodoList</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="TodoList.jar" size="17111" download="eager" />
+    <jar href="jlfgr-1_0.jar" size="114580" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="400" main-class="com.goni.todoList.Main"  name="TodoList" />
+  <update check="background"/>
+</jnlp>

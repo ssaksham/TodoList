@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.goni.todoList.dialogController"
+            prefHeight="400.0" prefWidth="800.0">
+    <headerText>We could put out instructions here</headerText>
+
+<content>
+    <GridPane vgap="10" hgap="10">
+        <Label text="Short Description:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField fx:id="shortDescription" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+        <Label text="Detail Description:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <TextArea GridPane.rowIndex="1" wrapText="true" fx:id="detailedDescription" GridPane.columnIndex="1"/>
+        <Label text="Select Date:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <DatePicker fx:id="deadLine" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    </GridPane>
+</content>
+</DialogPane>
